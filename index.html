@@ -31,15 +31,15 @@
         <ul class="nav__list">
 
           <li class="nav__items">
-            <a href="#" class="nav__link">Inicio</a>
+            <a href="#about_me" class="nav__link">Acerca de mi</a>
           </li>
           
           <li class="nav__items">
-            <a href="/" class="nav__link">Productos</a>
+            <a href="#projects" class="nav__link">Proyectos</a>
           </li>
 
           <li class="nav__items">
-            <a href="/" class="nav__link">Sobre Nosotros</a>
+            <a href="/" class="nav__link">Habilidades</a>
           </li>
 
         </ul>
@@ -66,14 +66,65 @@
           <a href="https://github.com/JuanT1901" target="_blank"><i class='bx bxl-github' id="github" ></i></a>
           <a href="https://www.linkedin.com/in/juan-torres-col-j1901/" target="_blank"><i class='bx bxl-linkedin-square' id="linkedin" ></i></a>
           <a href="https://wa.me/573042490847" target="_blank"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
+          <a onclick="location.href='mailto:juan.dtorres191@gmail.com?subject=Contacto%20desde%20portafolio'"><i class='bx bxl-gmail' id="gmail"></i></a>
         </div>
 
       </section>
 
-      <section class="content__info">
+      <section class="content__info" id="about_me">
         <p>Desarrollador Fullstack con una sólida base en JavaScript, HTML y CSS para la creación de interfaces intuitivas y responsivas. En el Frontend, domino React y Redux para construir aplicaciones dinámicas y altamente interactivas. Apasionado del desarrollador Backend con amplia experiencia en la creación de aplicaciones robustas y escalables utilizando Node.js, Express y PostgreSQL. Mi enfoque se centra en la implementación de soluciones eficientes y seguras que mejoren la experiencia del usuario y optimicen los procesos internos.</p>
       </section>
+
+      <section class="projects" id="projects">
+        <h2 class="projects__title">
+          Proyectos
+        </h2>
+        <p class="projects__main--description">
+          A continuación encontrarás los proyectos más recientes en los cuales he trabajado.
+        </p>
+
+        <article class="projects__items">
+          <h3 class="projects__name">Pokedex</h3>
+          <a href="https://pokedex-jdte.netlify.app" target="_blank">
+            <img class="projects__img" src="./assets/img/pokedex.png" alt="pokedex_img">
+          </a>
+        </article>
+
+        <article class="projects__items">
+          <h3 class="projects__name">Rick and Morty App</h3>
+          <a href="https://rick-and-morty-jdte.netlify.app" target="_blank">
+            <img class="projects__img" src="./assets/img/rick_and_morty.png" alt="pokedex_img">
+          </a>
+        </article>
+
+        <article class="projects__items">
+          <h3 class="projects__name">Weather App</h3>
+          <a href="https://weather-app-jdte.netlify.app" target="_blank">
+            <img class="projects__img" src="./assets/img/weather app.png" alt="pokedex_img">
+          </a>
+        </article>
+
+        <article class="projects__items">
+          <h3 class="projects__name">Fortune Cookies</h3>
+          <a href="https://fortune-cookies-jdte.netlify.app" target="_blank">
+            <img class="projects__img" src="./assets/img/fortune_cookies.png" alt="pokedex_img">
+          </a>
+        </article>
+      </section>
+
+      <section class="skills">
+        <article class="skills__container">
+          <i class='bx bxl-html5' style='color:#ffffff' ></i>
+          <p class="skills__name">HTML 5</p>
+        </article>
+
+        <article class="skills__container">
+          <i class='bx bxl-html5' style='color:#ffffff' ></i>
+          <p class="skills__name">HTML 5</p>
+        </article>
+      </section>
     </main>
+
 
     <footer>
       
