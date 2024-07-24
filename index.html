@@ -1,13 +1,84 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Juan Torres</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+  <div class="loader" >  
+    <span class="name">Juan Torres <span class="portfolio" id="portfolio">Portfolio</span></span>
+  </div>
+
+  <div class="container hidden">
+
+    <header class="nav container" id="header">
+
+      <img class="logo" src="./assets/img/logo.png" alt="logo">
+
+      <div class="nav__menu">
+        <button type="button" class="nav__btn btn--close">
+          <i class='bx bx-x'></i>
+        </button>
+
+        <ul class="nav__list">
+
+          <li class="nav__items">
+            <a href="#" class="nav__link">Inicio</a>
+          </li>
+          
+          <li class="nav__items">
+            <a href="/" class="nav__link">Productos</a>
+          </li>
+
+          <li class="nav__items">
+            <a href="/" class="nav__link">Sobre Nosotros</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <button type="button" class="nav__btn btn--menu">
+
+        <i class='bx bx-menu'></i>
+
+      </button>
+
+    </header>
+
+    <main class="content">
+      <section class="content__about--me">
+
+        <img class="photo" src="./assets/img/profile.jpg" alt="header__photo" />
+        <h1 class="header__name">Juan Torres</h1>
+        <p class="header__profession">Desarrollador Web Fullstack</p>  
+        <div class="download__btn">
+          <a class="cv" href="./assets/downloads/CV.pdf" download="CV Juan Torres.pdf">Descarga mi CV</a>
+        </div>
+        <div class="social__networks">
+          <a href="https://github.com/JuanT1901" target="_blank"><i class='bx bxl-github' id="github" ></i></a>
+          <a href="https://www.linkedin.com/in/juan-torres-col-j1901/" target="_blank"><i class='bx bxl-linkedin-square' id="linkedin" ></i></a>
+          <a href="https://wa.me/573042490847" target="_blank"><i class='bx bxl-whatsapp' id="whatsapp"></i></a>
+        </div>
+
+      </section>
+
+      <section class="content__info">
+        <p>Desarrollador Fullstack con una sólida base en JavaScript, HTML y CSS para la creación de interfaces intuitivas y responsivas. En el Frontend, domino React y Redux para construir aplicaciones dinámicas y altamente interactivas. Apasionado del desarrollador Backend con amplia experiencia en la creación de aplicaciones robustas y escalables utilizando Node.js, Express y PostgreSQL. Mi enfoque se centra en la implementación de soluciones eficientes y seguras que mejoren la experiencia del usuario y optimicen los procesos internos.</p>
+      </section>
+    </main>
+
+    <footer>
+      
+    </footer>
+  </div>
+  <script src="./assets/js/main.js" type="module"></script>
+</body>
 </html>
