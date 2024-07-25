@@ -321,6 +321,13 @@ a{
   }
   #header {
     max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .photo {
+    width: 300px;
+    height: 300px;
   }
 
   .nav__menu ul {
