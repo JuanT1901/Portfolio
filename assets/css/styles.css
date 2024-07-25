@@ -322,7 +322,7 @@ a{
   .nav__menu ul {
     display: flex;
     flex-direction: row;
-    margin: 1.7rem 1rem 0 0;
+    margin: 2.2vh;
     gap: 3rem;
     font-size: 1.2rem;
     font-weight: 500;
