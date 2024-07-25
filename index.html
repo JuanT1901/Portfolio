@@ -12,7 +12,7 @@
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="icon" href="/./assets/img/logo2.png" type="image/png">
 </head>
-<body>
+<body class="no-scroll">
 
   <div class="loader" >  
     <span class="name">Juan Torres <span class="portfolio" id="portfolio">Portfolio</span></span>
@@ -22,7 +22,9 @@
 
     <header class="nav container" id="header">
 
-      <img class="logo" src="./assets/img/logo.png" alt="logo">
+      <a href="#about_me">
+        <img class="logo" src="./assets/img/logo.png" alt="logo">
+      </a>
 
       <div class="nav__menu">
         <button type="button" class="nav__btn btn--close">
@@ -40,7 +42,7 @@
           </li>
 
           <li class="nav__items">
-            <a href="/" class="nav__link">Habilidades</a>
+            <a href="#skills" class="nav__link">Habilidades</a>
           </li>
 
         </ul>
@@ -57,7 +59,7 @@
     <main class="content">
       <section class="content__about--me">
 
-        <img class="photo" src="./assets/img/profile.jpg" alt="header__photo" />
+        <img class="photo" id="about_me" src="./assets/img/profile.jpg" alt="header__photo" />
         <h1 class="header__name">Juan Torres</h1>
         <p class="header__profession">Desarrollador Web Fullstack</p>  
         <div class="download__btn">
@@ -72,7 +74,7 @@
 
       </section>
 
-      <section class="content__info" id="about_me">
+      <section class="content__info">
         <p>Desarrollador Fullstack con una sólida base en JavaScript, HTML y CSS para la creación de interfaces intuitivas y responsivas. En el Frontend, domino React y Redux para construir aplicaciones dinámicas y altamente interactivas. Apasionado del desarrollador Backend con amplia experiencia en la creación de aplicaciones robustas y escalables utilizando Node.js, Express y PostgreSQL. Mi enfoque se centra en la implementación de soluciones eficientes y seguras que mejoren la experiencia del usuario y optimicen los procesos internos.</p>
       </section>
 
@@ -85,48 +87,72 @@
         </p>
 
         <article class="projects__items">
-          <h3 class="projects__name">Pokedex</h3>
           <a href="https://pokedex-jdte.netlify.app" target="_blank">
             <img class="projects__img" src="./assets/img/pokedex.png" alt="pokedex_img">
           </a>
-          <p>Desarrollé una aplicación Pokedex utilizando React, donde los usuarios pueden buscar y visualizar información detallada sobre diferentes Pokémon. Implementé componentes reutilizables y manejé estados para una experiencia de usuario interactiva y fluida.</p>
+          <div class="project__description">
+            <h3 class="projects__name">Pokedex</h3>
+            <p>Desarrollé una aplicación Pokedex utilizando React, donde los usuarios pueden buscar y visualizar información detallada sobre diferentes Pokémon. Implementé componentes reutilizables y manejé estados para una experiencia de usuario interactiva y fluida.</p>
+          </div>
         </article>
 
         <article class="projects__items">
-          <h3 class="projects__name">Rick and Morty App</h3>
           <a href="https://rick-and-morty-jdte.netlify.app" target="_blank">
             <img class="projects__img" src="./assets/img/rick_and_morty.png" alt="pokedex_img">
-            <p>Creé una aplicación en React que permite explorar personajes, episodios y ubicaciones de la serie Rick and Morty. Utilicé la API oficial para integrar datos dinámicos y proporcioné una interfaz intuitiva con componentes modulares y gestión de estados eficiente.</p>
           </a>
+          <div class="project__description">
+            <h3 class="projects__name">Rick and Morty App</h3>
+            <p>Creé una aplicación en React que permite explorar personajes, episodios y ubicaciones de la serie Rick and Morty. Utilicé la API oficial para integrar datos dinámicos y proporcioné una interfaz intuitiva con componentes modulares y gestión de estados eficiente.</p>
+          </div>
         </article>
 
         <article class="projects__items">
-          <h3 class="projects__name">Weather App</h3>
           <a href="https://weather-app-jdte.netlify.app" target="_blank">
             <img class="projects__img" src="./assets/img/weather app.png" alt="pokedex_img">
           </a>
-          <p>Desarrollé una aplicación del clima en React que muestra información meteorológica en tiempo real para cualquier ubicación. Utilicé APIs de clima para obtener datos precisos, implementando una interfaz limpia y amigable, con gráficos y detalles meteorológicos como temperatura, humedad y nubosidad.</p>
+          <div class="project__description">
+            <h3 class="projects__name">Weather App</h3>
+            <p>Desarrollé una aplicación del clima en React que muestra información meteorológica en tiempo real para cualquier ubicación. Utilicé APIs de clima para obtener datos precisos, implementando una interfaz limpia y amigable, con gráficos y detalles meteorológicos como temperatura, humedad y nubosidad.</p>
+          </div>
         </article>
 
         <article class="projects__items">
-          <h3 class="projects__name">Fortune Cookies</h3>
           <a href="https://fortune-cookies-jdte.netlify.app" target="_blank">
             <img class="projects__img" src="./assets/img/fortune_cookies.png" alt="pokedex_img">
           </a>
-          <p>Desarrollé una aplicación en React que presenta frases inspiradoras de personas famosas, simulando galletas de la fortuna. Utilicé un archivo JSON como fuente de datos, implementando componentes interactivos para mostrar una nueva frase al hacer clic, proporcionando una experiencia divertida y motivadora para los usuarios.</p>
+          <div class="project__description">
+            <h3 class="projects__name">Fortune Cookies</h3>
+            <p>Desarrollé una aplicación en React que presenta frases inspiradoras de personas famosas, simulando galletas de la fortuna. Utilicé un archivo JSON como fuente de datos, implementando componentes interactivos para mostrar una nueva frase al hacer clic, proporcionando una experiencia divertida y motivadora para los usuarios.</p>
+          </div>
         </article>
       </section>
 
-      <h2 class="titles">Habilidades</h2>
-      <section class="skills">
+      <h2 class="titles" id="skills">Habilidades</h2>
+      <section class="skills" >
+        
         <article class="skills__container">
-          <i class='bx bxl-css3' style='color:	#1572B6' ></i>
-          <p class="skills__name">CSS</p>
+          <i class='bx bxl-javascript' style="color: #F7DF1E"></i>
+          <p class="skills__name">JavaScript</p>
         </article>
 
         <article class="skills__container">
           <i class='bx bxl-html5' style='color:#E34F26' ></i>
           <p class="skills__name">HTML</p>
+        </article>
+
+        <article class="skills__container">
+          <i class='bx bxl-css3' style='color:	#1572B6' ></i>
+          <p class="skills__name">CSS</p>
+        </article>
+        
+        <article class="skills__container">
+          <i class='bx bxl-typescript' style='color:#007ACC' ></i>
+          <p class="skills__name">TypeScript</p>
+        </article>
+        
+        <article class="skills__container">
+          <img src="https://img.icons8.com/?size=100&id=Pd2x9GWu9ovX&format=png&color=000000" alt="">
+          <p class="skills__name">Java</p>
         </article>
 
         <article class="skills__container">
@@ -154,10 +180,6 @@
           <p class="skills__name">PostgreSQL</p>
         </article>
 
-        <article class="skills__container">
-          <i class='bx bxl-typescript' style='color:#007ACC' ></i>
-          <p class="skills__name">Typescript</p>
-        </article>
 
         <article class="skills__container">
           <i class='bx bxl-git' style='color:#F05033' ></i>
