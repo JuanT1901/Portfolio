@@ -263,7 +263,7 @@ a{
   margin-bottom: 2rem;
 }
 
-.projects__title {
+.titles {
   margin: .5rem 0 1rem 0;
 }
 
@@ -292,5 +292,6 @@ a{
 }
 
 .skills__container i {
-  font-size: 3.5rem;
+  font-size: 3em;
+  padding: .5rem 0;
 }
